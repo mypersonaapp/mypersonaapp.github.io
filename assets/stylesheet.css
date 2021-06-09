@@ -1,0 +1,462 @@
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+ul,
+ol {
+  padding: 0;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  transition: 0.6s ease-in;
+}
+ul,
+ol {
+  list-style: none;
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+article > * + * {
+  margin-top: 1em;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+/* reset */
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+a {
+    text-decoration: none;
+}
+#background-img {
+    background-image: url(/assets/img/background-img.png);
+    height: 70rem;
+}
+header {
+    display: none;
+}
+.header-mobile {
+    display: flex;
+    justify-content: right;
+    padding-bottom: 2rem;
+}
+.cta-mobile {
+    width: 30rem;
+    height: 5.6rem;
+    border-radius: 4rem;
+    background-color: #5F2EEA;
+    font-size: 2rem;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cta-mobile a {
+    color: white;
+}
+.main-section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    margin-left: 3rem;
+    padding-top: 3rem;
+    padding-right: 5rem;
+}
+h1 {
+    font-size: 6.4rem;
+    font-weight: 700;
+}
+.main-section p {
+    font-size: 1.8rem;
+    font-weight: 700;
+    padding-bottom: 3rem;
+}
+.cta-stores-mobile {
+    display: flex;
+    justify-content: space-around;
+}
+.cta-stores {
+    display: none;
+    align-items: center;
+}
+.cta-stores-mobile img {
+    padding-top: 2rem;
+}
+.main-img {
+    position: absolute;
+    bottom: -32rem;
+    right: -.4rem;
+    width: 130%;
+}
+.section {
+    margin-left: 3rem;
+    color: #484A70;
+    margin-top: 10rem;
+    margin-right: 3rem;
+}
+h2 {
+    font-size: 3.5rem;
+    font-weight: 700;
+}
+.section p {
+    font-size: 1.8rem;
+    font-weight: 400;
+    padding-top: 4rem;
+    line-height: 3rem;
+}
+.caritas-img {
+    margin-top: 3rem;
+}
+.section.registro {
+    position: relative;
+    margin-top: 3rem;
+}
+.section.registro p {
+    padding-left: 0;
+}
+.bubble.registro {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}.section.actividad {
+    position: relative;
+    margin-left: 3rem;
+    margin-top: 5rem;
+}
+.section.actividad p {
+    padding-top: 4rem;
+    line-height: 3rem;
+}
+.bubble.actividad {
+    position: absolute;
+    top: 0;
+    left: -20rem;
+    z-index: -1;
+}
+.section.objetivos {
+    position: relative;
+    margin-top: 5rem;
+}
+.objetivos-img {
+    position: absolute;
+    top: 43rem;
+    right: 0;
+}
+.section.historial {
+    position: relative;
+    margin-left: 3rem;
+    margin-top: 30rem;
+}
+.section.historial p {
+    padding-top: 4rem;
+    line-height: 3rem;
+}
+.bubble.historial {
+    position: absolute;
+    top: 0;
+    left: -20rem;
+    z-index: -1;
+}
+.historial-img {
+    position: absolute;
+    top: 35rem;
+    right: 0;
+    width: 110%;
+}
+.section.recomendaciones {
+    position: relative;
+    margin-top: 20rem;
+    margin-left: 3rem;
+}
+.recomen-p {
+    position: absolute;
+    top: 45rem;
+}
+#background-img-footer {
+    margin-top: 15rem;
+    display: flex;
+    flex-direction: column;
+    background-image: url(/assets/img/background-img-footer.png);
+    height: 67rem;
+}
+.last-section {
+    padding-top: 35rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+h3 {
+    color: white;
+    font-size: 4.8rem;
+    font-weight: 700;
+}
+.last-section p {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 700;
+    padding-bottom: 2rem;
+}
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 2rem 0 3rem;
+}
+footer p {
+    color: #484A70;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 2rem;
+}
+@media (min-width: 40em) {
+    header {
+        display: flex;
+        justify-content: right;
+        padding: 5rem;
+        padding-bottom: 0;
+    }
+    .header-mobile {
+        display: none;
+    }
+    .cta {
+        width: 30rem;
+        height: 5.6rem;
+        border-radius: 4rem;
+        background-color: #5F2EEA;
+        font-size: 2rem;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .cta a {
+        color: white;
+    }
+    .main-section {
+        color: white;
+        margin-left: 10rem;
+        padding-top: 0;
+        padding-right: 70rem;
+        position: relative;
+    }
+    h1 {
+        font-size: 9.3rem;
+        font-weight: 700;
+    }
+    .main-section p {
+        font-size: 2.4rem;
+        font-weight: 700;
+        padding-bottom: 6rem;
+    }
+    .cta-stores-mobile {
+        display: none;
+    }
+    .main-img {
+        position: absolute;
+        top: 1rem;
+        right: 0;
+        width: auto;
+    }
+    .cta-stores {
+        display: flex;
+        flex-direction: row;
+    }
+    .cta-stores img {
+        padding-top: 0;
+        padding-right: 2rem;
+    }
+    .section {
+        position: relative;
+        margin-left: 10rem;
+        color: #484A70;
+        margin-top: 10rem;
+        margin-right: 0;
+    }
+    h2 {
+        font-size: 3.5rem;
+        font-weight: 700;
+    }
+    .section p {
+        font-size: 2.4rem;
+        font-weight: 400;
+        padding-top: 4rem;
+        line-height: 3rem;
+        padding-right: 70rem;
+    }
+    .caritas-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 10rem;
+        margin-top: 0;
+    }
+    .section.registro {
+        margin-top: 10rem;
+    }
+    .section.registro p {
+        padding-left: 50rem;
+        padding-right: 20rem;
+    }
+    .registro-p {
+        position: absolute;
+        top: 24rem;
+    }
+    .bubble {
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .section.actividad {
+        position: relative;
+        margin-left: 40rem;
+        margin-top: 10rem;
+    }
+    .section.actividad p {
+        padding-top: 4rem;
+        line-height: 3rem;
+        padding-right: 40rem;
+    }
+    .bubble.actividad {
+        position: absolute;
+        top: 0;
+        left: -40rem;
+        z-index: -1;
+    }
+    .section.actividad .actividad-p {
+        padding: 0 30rem 0 10rem;
+    }
+    .actividad-img {
+        margin-left: 3rem;
+    }
+    .section.objetivos {
+        position: relative;
+        margin-top: 10rem;
+    }
+    .objetivos-img {
+        position: absolute;
+        top: 0;
+        right: 0;
+        margin-right: 10rem;
+    }
+    .section.historial {
+        position: relative;
+        margin-left: 40rem;
+        margin-top: 20rem;
+    }
+    .section.historial p {
+        padding-top: 4rem;
+        line-height: 3rem;
+        padding-right: 40rem;
+    }
+    .bubble.historial {
+        position: absolute;
+        top: 0;
+        left: -40rem;
+        z-index: -1;
+    }
+    .historial-img {
+        position: inherit;
+        top: 0;
+        width: auto;
+    }
+    .section.recomendaciones {
+        position: relative;
+        margin-top: 0;
+        margin-left: 10rem;
+    }
+    .section.recomendaciones p {
+        padding-left: 50rem;
+        padding-right: 20rem;
+    }
+    .recomen-p {
+        position: absolute;
+        top: 7rem;
+    }
+    #background-img-footer {
+        margin-top: -15rem;
+        display: flex;
+        flex-direction: column;
+        background-image: url(/assets/img/background-img-footer.png);
+        height: 65rem;
+    }
+    .last-section {
+        padding-top: 25rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    h3 {
+        color: white;
+        font-size: 9.3rem;
+        font-weight: 700;
+    }
+    .last-section p {
+        color: white;
+        font-size: 3.6rem;
+        font-weight: 700;
+        padding-bottom: 2rem;
+    }
+    footer {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        justify-content: space-between;
+        margin: 0 2rem 0 5rem;
+    }
+    footer p {
+        color: #484A70;
+        font-size: 2.4rem;
+        font-weight: 400;
+        padding-top: 8rem;
+        text-align: left;
+    }
+}
