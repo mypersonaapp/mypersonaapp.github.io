@@ -79,7 +79,7 @@ header {
 }
 .header-mobile {
     display: flex;
-    justify-content: right;
+    justify-content: center;
     padding-bottom: 2rem;
 }
 .cta-mobile {
@@ -104,7 +104,7 @@ header {
     color: white;
     margin-left: 3rem;
     padding-top: 3rem;
-    padding-right: 5rem;
+    padding-right: 4rem;
 }
 h1 {
     font-size: 6.4rem;
