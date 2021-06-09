@@ -258,7 +258,7 @@ footer p {
 @media (min-width: 40em) {
     header {
         display: flex;
-        justify-content: right;
+        justify-content: flex-end;
         padding: 5rem;
         padding-bottom: 0;
     }
